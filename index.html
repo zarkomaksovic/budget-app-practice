@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <title>Budget calculator</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-6">
+                <!-- LEFT SECTION UI -->
+                <div class="left">
+                    <div class="budget">
+                        <div class="budget-title">
+                            Available Budget in <span class="budget-title-month">%Month%</span>:
+                        </div>
+                        <div class="budget-value">+ 1,000.00</div>
+                        <div class="budget-income clearfix">
+                            <div class="budget-income-text">Income</div>
+                            <div class="right">
+                                <div class="budget-income-value">+ 1,000.00</div>
+                                <div class="budget-income-percentage">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="budget-expenses clearfix">
+                            <div class="budget-expenses-text">Expenses</div>
+                            <div class="right clearfix">
+                                <div class="budget-expenses-value">- 500.00</div>
+                                <div class="budget-expenses-percentage">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <!-- RIGHT SECTION USER INPUTS -->
+                <div class="calculation">
+                    <div class="add">
+                        <div class="add-container">
+                            <select class="add-type">
+                                <option value="inc" selected>+</option>
+                                <option value="exp">-</option>
+                            </select>
+                            <input type="text" class="add-description" placeholder="Add description">
+                            <input type="number" class="add-value" placeholder="Value">
+                            <button class="add-btn"><i class="ion-ios-checkmark-outline"></i></button>
+                        </div>
+                    </div>
+                    <div class="container clearfix">
+                        <div class="income">
+                            <h2 class="icome-title">Income</h2>
+                            <div class="income-list">
+                                <!-- INSERT DESCRIPTION AND VALUES ON USER INCOME INPUT -->
+                                    <!--
+                                     <div class="item clearfix" id="income-0">
+                                        <div class="item-description">Salary</div>
+                                            <div class="right clearfix">
+                                                <div class="item-value">+ 2,100.00</div>
+                                            <div class="item-delete">
+                                                <button class="item-delete--btn">
+                                                  <i class="ion-ios-close-outline"></i>
+                                              </button>
+                                            </div>
+                                        </div>
+                                     </div>                      
+                                     -->
+                            </div>
+                        </div>
+                        <div class="expenses">
+                            <h2 class="expenses-title">Expenses</h2>
+                            <div class="expenses-list">
+                                 <!-- INSERT DESCRIPTION AND VALUES ON USER EXPENS INPUT -->
+                                <!--
+                        <div class="item clearfix" id="expense-0">
+                            <div class="item__description">Apartment rent</div>
+                            <div class="right clearfix">
+                                <div class="item-value">- 900.00</div>
+                                <div class="item-percentage">21%</div>
+                                <div class="item-delete">
+                                    <button class="item-delete-btn"><i class="ion-ios-close-outline"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- REFRESH PAGE -->
+                <div class="clear-btn">
+                        <button class="btn btn-danger" value="Refresh Page" onClick="window.location.reload()">refresh</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
